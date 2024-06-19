@@ -19,21 +19,87 @@ body
     position: relative;
     width: 100%;
     max-width: 1000px;
-    min-height: 100px;
+    min-height: 1000px;
     background: #fff;
+    margin: 50px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     box-shadow: 0 35px 55px rgba(0,0,0,0.1);
 }
-.container.left_side
+.container .left_side
 {
-    position: realtive;
-    background: rgb(2, 2, 167);
+    position: relative;
+    background: rgb(46, 46, 146);
     padding: 40px;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.3);
 }
-.container.right_side
+.profileText
 {
-    position: realtive;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2)
+}
+.profileText .imgBx
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileText .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h2
+{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileText h2 span
+{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.contactInfo
+{
+    padding-top: 40px;
+}
+.title 
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactInfo ul
+{
+    position: relative;
+}
+.contactInfo ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.container .right_side
+{
+    position: relative;
     background: rgb(239, 239, 255);
     padding: 40px;
 }
